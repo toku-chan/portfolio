@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import { Layout } from '../src/components/Layout';
-import { About } from '../src/components/About';
-import { Career } from '../src/components/Career';
-import { Skills } from '../src/components/Skills';
+import { Layout } from '~/components/Layout';
+import { About } from '~/components/About';
+import { Career } from '~/components/Career';
+import { Skills } from '~/components/Skills';
 
 const Home: NextPage = () => {
   return (
