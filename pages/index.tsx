@@ -4,6 +4,7 @@ import { About } from '~/components/About';
 import { Career } from '~/components/Career';
 import { Skills } from '~/components/Skills';
 import { Interest } from '~/components/Interest';
+import { Contact } from '~/components/Contact';
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <Career />
       <Skills />
       <Interest />
+      <Contact />
     </Layout>
   )
 }
