@@ -1,5 +1,24 @@
+const myBirthDay = {
+  year: 1993,
+  month: 5,
+  date: 29
+}
+
+function getAge() {
+  const today = new Date();
+  const todayYear = today.getFullYear();
+  const thisYearBirthDay = new Date(todayYear, myBirthDay.month - 1, myBirthDay.date);
+  const age = todayYear - myBirthDay.year;
+
+  if(today < thisYearBirthDay) {
+    return age - 1;
+  }
+
+  return age;
+}
+
 export function About() {
-  console.log("Aboutは名前・年齢・性別・出身・住まいを記載するよ")
+  const age = getAge()
 
   return (
     <section>
@@ -11,7 +30,7 @@ export function About() {
       <div>
         <h2>生年月日</h2>
         <p>1993/05/29</p>
-        <p>満「自動計算で」歳</p>
+        <p>{age}歳</p>
       </div>
       <div>
         <h2>性別</h2>
