@@ -1,21 +1,6 @@
 import type { NextPage } from 'next';
-import { Layout } from '~/components/Layout';
-import { About } from '~/components/About';
-import { Career } from '~/components/Career';
-import { Skills } from '~/components/Skills';
-import { Interest } from '~/components/Interest';
-import { Contact } from '~/components/Contact';
+import { HomeContent } from '~/feature/Home';
 
-const Home: NextPage = () => {
-  return (
-    <Layout>
-      <About />
-      <Career />
-      <Skills />
-      <Interest />
-      <Contact />
-    </Layout>
-  )
-}
+const Home: NextPage = () => <HomeContent />
 
 export default Home
