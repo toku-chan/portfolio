@@ -27,19 +27,22 @@ export function About() {
   return (
     <section>
       <h1>About</h1>
-      <div>
+      <section>
         <h2>名前</h2>
         <p>{personalData.name}</p>
-      </div>
-      <div>
+      </section>
+      <section>
         <h2>生年月日</h2>
-        <p>{personalData.birthday.year}/{personalData.birthday.month}/{personalData.birthday.date}</p>
-        <p>{age}歳</p>
-      </div>
-      <div>
+        <p>{personalData.birthday.year}年{personalData.birthday.month}月{personalData.birthday.date}日 {age}歳</p>
+      </section>
+      <section>
         <h2>現在住んでいるところ</h2>
         <p>{personalData.location}</p>
-      </div>
+      </section>
+      <section>
+        <h2>最寄駅</h2>
+        <p>JR常磐線 柏駅</p>
+      </section>
     </section>
   )
 }
