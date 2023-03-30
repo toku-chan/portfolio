@@ -1,0 +1,1 @@
+export * as fontStyles from "./fontStyles";
