@@ -1,9 +1,11 @@
+import { Heading1 } from "~/designSystems";
+
 export function Interest() {
   console.log("このページ自体別のページに切り出しても良いかも");
 
   return (
     <section>
-      <h1>趣味・興味あること・関心事</h1>
+      <Heading1>趣味・興味あること・関心事</Heading1>
       <section>
         <h2>ベース</h2>
         <p>

@@ -1,9 +1,11 @@
+import { Heading1 } from "~/designSystems"
+
 export function Skills() {
   console.log("やれることってどういう指標で出せば良いかな・・・")
 
   return (
     <section>
-      <h1>スキル</h1>
+      <Heading1>スキル</Heading1>
       {/* <p>とりあえずやったことがあることを書こう</p> */}
       {/* <p>どんくらいできるかはまた後で</p> */}
       <ul>

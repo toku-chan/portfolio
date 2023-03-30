@@ -1,3 +1,5 @@
+import { Heading1 } from "~/designSystems"
+
 const personalData = {
   name: "中島一徳",
   location: "千葉県柏市",
@@ -26,7 +28,7 @@ export function About() {
 
   return (
     <section>
-      <h1>About</h1>
+      <Heading1>About</Heading1>
       <section>
         <h2>名前</h2>
         <p>{personalData.name}</p>
