@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Heading1 } from "~/designSystems"
 
 const personalData = {
@@ -44,6 +45,11 @@ export function About() {
       <section>
         <h2>最寄駅</h2>
         <p>JR常磐線 柏駅</p>
+      </section>
+      <section>
+        <p>
+          趣味や最近ハマっていることを見たい方は<Link href="/interest">こちら</Link>から
+        </p>
       </section>
     </section>
   )
