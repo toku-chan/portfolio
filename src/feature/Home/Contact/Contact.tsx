@@ -1,13 +1,19 @@
+import styled from "@emotion/styled";
 import { Heading_1 } from "~/designSystems"
 
+// TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する
+const Content = styled.section`
+  margin: 36px auto 0;
+  padding: 0;
+`;
+
 export function Contact() {
-  console.log("自分への連絡先を入れておく。内容は後から考える、とりあえず枠だけ")
 
   return (
-    <section>
+    <Content>
       <Heading_1>Contact</Heading_1>
       <p>メールアドレス貼っておけば良いかな？</p>
       <p>TwitterのDMとかの方が良いかな？</p>
-    </section>
+    </Content>
   )
 }
