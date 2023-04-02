@@ -1,9 +1,10 @@
+import { Heading_2 } from "~/designSystems";
 import { simulatedProductsList } from "./config";
 
 export function Exnoa() {
   return (
     <section>
-      <h2>合同会社EXNOA</h2>
+      <Heading_2>合同会社EXNOA</Heading_2>
       <ul>
         {simulatedProductsList.map((item) => (
           <li key={item.title}>

@@ -1,9 +1,10 @@
+import { Heading_2 } from "~/designSystems";
 
 export function Games() {
 
   return (
     <section>
-      <h2>ゲーム</h2>
+      <Heading_2>ゲーム</Heading_2>
       <ul>
         <li>OverWatch2</li>
         <li>LINEモンスターファーム（スマホゲーム）</li>

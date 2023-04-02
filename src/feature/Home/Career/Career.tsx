@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { career } from "./config";
-import { Heading1 } from "~/designSystems"
+import {
+  Heading_1
+} from "~/designSystems"
 
 export function Career() {
   console.log("Careerはざっくりとした経歴を箇条書きで書いておく感じが良いかな？")
 
   return (
     <section>
-      <Heading1>Career</Heading1>
+      <Heading_1>Career</Heading_1>
       <ul>
         {career.map((item) => (
           // TODO: idとかにしておきたいが、暫定でdetailにしておく

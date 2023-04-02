@@ -1,1 +1,4 @@
-export { Heading1 } from "./Heading/Heading1";
+export {
+  Heading_1,
+  Heading_2,
+} from "./Heading/Heading";

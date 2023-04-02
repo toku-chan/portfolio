@@ -1,5 +1,8 @@
 import Link from "next/link";
-import { Heading1 } from "~/designSystems"
+import {
+  Heading_1,
+  Heading_2
+} from "~/designSystems"
 
 const personalData = {
   name: "中島一徳",
@@ -29,21 +32,21 @@ export function About() {
 
   return (
     <section>
-      <Heading1>About</Heading1>
+      <Heading_1>About</Heading_1>
       <section>
-        <h2>名前</h2>
+        <Heading_2>名前</Heading_2>
         <p>{personalData.name}</p>
       </section>
       <section>
-        <h2>生年月日</h2>
+        <Heading_2>生年月日</Heading_2>
         <p>{personalData.birthday.year}年{personalData.birthday.month}月{personalData.birthday.date}日 {age}歳</p>
       </section>
       <section>
-        <h2>現在住んでいるところ</h2>
+        <Heading_2>現在住んでいるところ</Heading_2>
         <p>{personalData.location}</p>
       </section>
       <section>
-        <h2>最寄駅</h2>
+        <Heading_2>最寄駅</Heading_2>
         <p>JR常磐線 柏駅</p>
       </section>
       <section>
