@@ -1,11 +1,11 @@
-import React from "react";
-import { Header } from "~/components/Header";
-import { Footer } from "~/components/Footer";
-import styled from "@emotion/styled";
+import React from 'react';
+import { Header } from '~/components/Header';
+import { Footer } from '~/components/Footer';
+import styled from '@emotion/styled';
 
 type Props = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,22 +16,18 @@ const Wrapper = styled.div`
 const Main = styled.main`
   // レスポンシブでSP表示は767pxまで
   @media screen and (max-width: 767px) {
-    width: 100%
+    width: 100%;
   }
 `;
 
-export function Layout({
-  children
-}: Props) {
-  console.log('処理があるならなんかする')
+export function Layout({ children }: Props) {
+  console.log('処理があるならなんかする');
 
   return (
     <Wrapper>
       <Header />
-      <Main>
-        {children}
-      </Main>
+      <Main>{children}</Main>
       <Footer />
     </Wrapper>
-  )
+  );
 }

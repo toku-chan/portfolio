@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { Heading_2 } from "~/designSystems";
+import styled from '@emotion/styled';
+import { Heading_2 } from '~/designSystems';
 
 // TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する
 const Content = styled.section`
@@ -8,7 +8,6 @@ const Content = styled.section`
 `;
 
 export function Games() {
-
   return (
     <Content>
       <Heading_2>ゲーム</Heading_2>
@@ -17,9 +16,7 @@ export function Games() {
         <li>LINEモンスターファーム（スマホゲーム）</li>
         <li>ガーディアンテイルズ（スマホゲーム）</li>
       </ul>
-      <p>
-        最近はこの辺のゲームをちょこちょこやってます。
-      </p>
+      <p>最近はこの辺のゲームをちょこちょこやってます。</p>
     </Content>
-  )
+  );
 }

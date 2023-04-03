@@ -12,5 +12,5 @@ export function HomeContent() {
       <Skills />
       <Contact />
     </Layout>
-  )
+  );
 }

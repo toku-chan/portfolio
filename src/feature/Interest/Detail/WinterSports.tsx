@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { Heading_2 } from "~/designSystems";
+import styled from '@emotion/styled';
+import { Heading_2 } from '~/designSystems';
 
 // TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する
 const Content = styled.section`
@@ -12,9 +12,7 @@ export function WinterSports() {
   return (
     <Content>
       <Heading_2>スノボー</Heading_2>
-      <p>
-        毎シーズン滑りに行ってます。
-      </p>
+      <p>毎シーズン滑りに行ってます。</p>
     </Content>
-  )
+  );
 }

@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { Heading_2 } from "~/designSystems";
-import { simulatedProductsList } from "./config";
+import styled from '@emotion/styled';
+import { Heading_2 } from '~/designSystems';
+import { simulatedProductsList } from './config';
 
 // TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する
 const Content = styled.section`
@@ -13,7 +13,7 @@ export function Ys() {
     <Content>
       <Heading_2>株式会社{`Y's`}</Heading_2>
       <ul>
-        {simulatedProductsList.map((item) => (
+        {simulatedProductsList.map(item => (
           <li key={item.title}>
             <p>{item.title}</p>
             <p>{item.description}</p>
@@ -21,5 +21,5 @@ export function Ys() {
         ))}
       </ul>
     </Content>
-  )
+  );
 }
