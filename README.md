@@ -2,9 +2,8 @@
 
 自分の過去実績を残すためのポートフォリオ
 
-## 技術スタック
+## 開発環境で使用している技術
 
-- Next.js
-- React.js
-- TypeScript
-- emotion
+- [Next.js](https://nextjs.org/docs/getting-started)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [husky](https://typicode.github.io/husky/#/)
