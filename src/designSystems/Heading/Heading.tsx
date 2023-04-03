@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const H2 = styled.h1`
+const H2 = styled.h2`
   font-size: 21px;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
