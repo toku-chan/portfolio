@@ -1,4 +1,4 @@
 {
-  "*.ts": "npm run lint",
-  "*.tsx": "npm run lint"
+  "*.ts": ["prettier --write", "npm run lint"],
+  "*.tsx": ["prettier --write", "npm run lint"]
 }

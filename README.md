@@ -7,3 +7,4 @@
 - [Next.js](https://nextjs.org/docs/getting-started)
 - [lint-staged](https://github.com/okonet/lint-staged)
 - [husky](https://typicode.github.io/husky/#/)
+- [prettier](https://prettier.io/)
