@@ -1,13 +1,12 @@
 import styled from '@emotion/styled';
 import { Heading_1 } from '~/designSystems';
 
-// TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する
 const Content = styled.section`
   margin: 36px auto 0;
   padding: 0;
 `;
 
-export function Contact() {
+export function ContactContent() {
   return (
     <Content>
       <Heading_1>Contact</Heading_1>
