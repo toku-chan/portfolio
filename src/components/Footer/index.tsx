@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+// TODO: Footerをページの最下部に固定する
 const FooterStyle = styled.footer`
   display: flex;
   justify-content: center;
