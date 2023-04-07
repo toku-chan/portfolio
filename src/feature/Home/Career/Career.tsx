@@ -1,11 +1,9 @@
-import Link from 'next/link';
 import styled from '@emotion/styled';
 import { career } from './config';
 import { Heading_1 } from '~/designSystems';
 
-// TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する
 const Content = styled.section`
-  margin: 36px auto 0;
+  margin: 0 auto;
   padding: 0;
 `;
 

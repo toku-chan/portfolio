@@ -1,12 +1,17 @@
 import Link from 'next/link';
 import styled from '@emotion/styled';
 import { Layout } from '~/components/Layout';
+import { ProfileIcon } from './ProfileIcon';
+import { Personal } from './Personal';
 import { Career } from './Career';
 import { Skills } from '../Skills';
 import { Products } from '../Products';
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 36px auto 0;
 `;
 
 export function HomeContent() {
@@ -15,17 +20,8 @@ export function HomeContent() {
       <Container>
         {/* 左ナビ */}
         <div>
-          <div>アイコン</div>
-          <div>名前</div>
-          <div>勤め先</div>
-          <div>
-            <p>SNS</p>
-            <ul>
-              <li>Twitter</li>
-              <li>GitHub</li>
-              <li>Instagram</li>
-            </ul>
-          </div>
+          <ProfileIcon />
+          <Personal />
           <div>
             <Link href='/about'>About</Link>
           </div>
@@ -35,15 +31,9 @@ export function HomeContent() {
         </div>
         {/* メインコンテンツ */}
         <div>
-          <div>
-            <Career />
-          </div>
-          <div>
-            <Skills />
-          </div>
-          <div>
-            <Products />
-          </div>
+          <Career />
+          <Skills />
+          <Products />
         </div>
       </Container>
     </Layout>
