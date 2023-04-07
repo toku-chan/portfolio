@@ -26,18 +26,10 @@ const ContentWrapper = styled.div`
 
 const Title = styled.span`
   font-size: 21px;
-`;
 
-// TODO: レスポンシブでSP表示は767px以下になった時の表示を検討する（ハンバーガーメニューでいいかな？）
-const List = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 300px;
-
-  li {
-    // 14px*1.2の大きさにしてみた
-    font-size: 16px;
+  a {
+    color: #333;
+    text-decoration: none;
   }
 `;
 
@@ -45,23 +37,9 @@ export function Header() {
   return (
     <HeaderStyle>
       <ContentWrapper>
-        <Title>Portfolio</Title>
-        <nav>
-          <List>
-            <li>
-              <Link href='/'>Home</Link>
-            </li>
-            <li>
-              <Link href='/works'>Works</Link>
-            </li>
-            <li>
-              <Link href='/about'>About</Link>
-            </li>
-            <li>
-              <Link href='/contact'>Contact</Link>
-            </li>
-          </List>
-        </nav>
+        <Title>
+          <Link href='/'>Portfolio</Link>
+        </Title>
       </ContentWrapper>
     </HeaderStyle>
   );

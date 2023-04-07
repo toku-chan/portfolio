@@ -21,7 +21,6 @@ export function Career() {
           </li>
         ))}
       </ul>
-      <Link href='/works'>制作実績はこちら</Link>
     </Content>
   );
 }
