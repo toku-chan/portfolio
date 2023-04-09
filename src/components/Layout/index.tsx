@@ -14,11 +14,12 @@ const Wrapper = styled.div`
 `;
 
 const Main = styled.main`
-  width: 100%;
+  width: 960px;
 
   // NOTE: タブレットは考慮しない
   // レスポンシブでSP表示は767pxまで
   @media screen and (max-width: 767px) {
+    width: 100%;
     padding-left: 36px;
     padding-right: 36px;
   }

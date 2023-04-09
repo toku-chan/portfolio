@@ -1,5 +1,14 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import styled from '@emotion/styled';
+
+const Container = styled.div`
+  margin-top: 48px;
+`;
+
+const Content = styled.div`
+  margin-top: 8px;
+`;
 
 const List = styled.ul`
   display: flex;
@@ -13,43 +22,47 @@ const Item = styled.li`
 
 export function Personal() {
   return (
-    <div>
-      <ul>
-        <li>中島一徳</li>
-        <li>{`Y's`}</li>
-        <li>
-          <List>
-            <Item>
-              <a
-                href='https://twitter.com/web_ittokun'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <Image
-                  src='/sns/twitter.svg'
-                  alt='Twitter'
-                  width='32'
-                  height='32'
-                />
-              </a>
-            </Item>
-            <Item>
-              <a
-                href='https://github.com/toku-chan'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <Image
-                  src='/sns/github.svg'
-                  alt='GitHub'
-                  width='32'
-                  height='32'
-                />
-              </a>
-            </Item>
-          </List>
-        </li>
-      </ul>
-    </div>
+    <Container>
+      <Content>中島一徳</Content>
+      <Content>{`Y's`}</Content>
+      <Content>
+        <List>
+          <Item>
+            <a
+              href='https://twitter.com/web_ittokun'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <Image
+                src='/sns/twitter.svg'
+                alt='Twitter'
+                width='32'
+                height='32'
+              />
+            </a>
+          </Item>
+          <Item>
+            <a
+              href='https://github.com/toku-chan'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <Image
+                src='/sns/github.svg'
+                alt='GitHub'
+                width='32'
+                height='32'
+              />
+            </a>
+          </Item>
+        </List>
+      </Content>
+      <Content>
+        <Link href='/about'>About</Link>
+      </Content>
+      <Content>
+        <Link href='/contact'>Contact</Link>
+      </Content>
+    </Container>
   );
 }
