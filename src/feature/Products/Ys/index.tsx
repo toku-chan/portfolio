@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { Heading } from '~/designSystems';
+import { Heading, spacingSize } from '~/designSystems';
 import { simulatedProductsList } from './config';
 
 const DetailWrapper = styled.section`
-  margin-top: 18px;
+  margin-top: ${spacingSize.level2_0x}px;
 `;
 
 export function Ys() {

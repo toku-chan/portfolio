@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { Heading } from '~/designSystems';
+import { Heading, spacingSize } from '~/designSystems';
 import { Exnoa } from './EXNOA';
 import { Ys } from './Ys';
 
 const Content = styled.section`
-  margin: 36px auto 0;
+  margin: ${spacingSize.level4_0x}px auto 0;
   padding: 0;
 `;
 

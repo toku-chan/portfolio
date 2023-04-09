@@ -1,10 +1,11 @@
 import styled from '@emotion/styled';
+import { spacingSize } from '~/designSystems';
 
 export const Content = styled.section`
-  margin: 36px auto 0;
+  margin: ${spacingSize.level4_0x}px auto 0;
   padding: 0;
 `;
 
 export const DetailWrapper = styled.section`
-  margin-top: 18px;
+  margin-top: ${spacingSize.level2_0x}px;
 `;

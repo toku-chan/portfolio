@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from '@emotion/styled';
+import { spacingSize } from '~/designSystems';
 
 const Container = styled.div`
-  margin-top: 48px;
+  margin-top: ${spacingSize.level6_0x}px;
 `;
 
 const Content = styled.div`
-  margin-top: 8px;
+  margin-top: ${spacingSize.level1_0x}px;
 `;
 
 const List = styled.ul`
@@ -17,7 +18,7 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  margin-right: 8px;
+  margin-right: ${spacingSize.level1_0x}px;
 `;
 
 export function Personal() {

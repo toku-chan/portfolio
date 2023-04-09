@@ -1,18 +1,19 @@
 import Link from 'next/link';
 import styled from '@emotion/styled';
+import { spacingSize } from '~/designSystems';
 
 const HeaderStyle = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 18px 0;
+  padding: ${spacingSize.level2_0x}px 0;
 
   // NOTE: タブレットは考慮しない
   // レスポンシブでSP表示は767pxまで
   @media screen and (max-width: 767px) {
     width: 100%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: ${spacingSize.level2_0x}px;
+    padding-right: ${spacingSize.level2_0x}px;
   }
 `;
 

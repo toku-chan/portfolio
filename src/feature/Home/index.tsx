@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { spacingSize } from '~/designSystems';
 import { Layout } from '~/components/Layout';
 import { ProfileIcon } from './ProfileIcon';
 import { Personal } from './Personal';
@@ -9,7 +10,7 @@ import { Products } from '../Products';
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 36px auto 0;
+  margin: ${spacingSize.level4_0x}px auto 0;
 `;
 
 export function HomeContent() {
