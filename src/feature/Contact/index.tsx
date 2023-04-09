@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Heading_1 } from '~/designSystems';
+import { Heading_1 } from '~/designSystems/Heading';
 import { Layout } from '~/components/Layout';
 
 const Content = styled.section`

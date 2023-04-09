@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Heading_2 } from '~/designSystems';
+import { Heading_2 } from '~/designSystems/Heading';
 import { simulatedProductsList } from './config';
 
 const DetailWrapper = styled.section`

@@ -1,4 +1,4 @@
-import { Heading_1, Heading_2 } from '~/designSystems';
+import { Heading_1, Heading_2 } from '~/designSystems/Heading';
 import * as S from '../styles';
 
 const personalData = {

@@ -1,4 +1,4 @@
-import { Heading_2 } from '~/designSystems';
+import { Heading_2 } from '~/designSystems/Heading';
 import { DetailWrapper } from '../../styles';
 
 export function Games() {

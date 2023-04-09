@@ -1,4 +1,4 @@
-import { Heading_1 } from '~/designSystems';
+import { Heading_1 } from '~/designSystems/Heading';
 import * as Detail from './Detail';
 import * as S from '../styles';
 

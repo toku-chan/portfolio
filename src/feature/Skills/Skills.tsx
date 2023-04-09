@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Heading_1 } from '~/designSystems';
+import { Heading_1 } from '~/designSystems/Heading';
 import { mySkillSets } from './config';
 
 // TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する

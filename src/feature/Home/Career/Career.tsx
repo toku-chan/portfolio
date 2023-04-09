@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { career } from './config';
-import { Heading_1 } from '~/designSystems';
+import { Heading_1 } from '~/designSystems/Heading';
 
 const Content = styled.section`
   margin: 0 auto;
