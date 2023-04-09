@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Heading_1 } from '~/designSystems/Heading';
+import { Heading } from '~/designSystems';
 import { mySkillSets } from './config';
 
 // TODO: 他の場所もこのサイズ感にするが共通化するべきかは検討する
@@ -11,7 +11,7 @@ const Content = styled.section`
 export function Skills() {
   return (
     <Content>
-      <Heading_1>スキル</Heading_1>
+      <Heading.screenTitle>スキル</Heading.screenTitle>
       <ul>
         {mySkillSets.map(item => (
           <li key={item.skill}>{item.skill}</li>

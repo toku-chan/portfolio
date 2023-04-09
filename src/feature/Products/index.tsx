@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Heading_1 } from '~/designSystems/Heading';
+import { Heading } from '~/designSystems';
 import { Exnoa } from './EXNOA';
 import { Ys } from './Ys';
 
@@ -11,7 +11,7 @@ const Content = styled.section`
 export function Products() {
   return (
     <Content>
-      <Heading_1>制作実績</Heading_1>
+      <Heading.screenTitle>制作実績</Heading.screenTitle>
       <Exnoa />
       <Ys />
     </Content>

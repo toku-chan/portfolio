@@ -1,10 +1,10 @@
-import { Heading_2 } from '~/designSystems/Heading';
+import { Heading } from '~/designSystems';
 import { DetailWrapper } from '../../styles';
 
 export function Games() {
   return (
     <DetailWrapper>
-      <Heading_2>ゲーム</Heading_2>
+      <Heading.sectionTitle>ゲーム</Heading.sectionTitle>
       <ul>
         <li>OverWatch2</li>
         <li>LINEモンスターファーム（スマホゲーム）</li>

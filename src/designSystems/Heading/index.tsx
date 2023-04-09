@@ -1,26 +1,24 @@
-import React from 'react';
 import styled from '@emotion/styled';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-const H2 = styled.h2`
-  font-size: 21px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 1);
-`;
-
-export function Heading_2({ children }: Props) {
-  return <H2>{children}</H2>;
-}
-
-const H1 = styled.h1`
+const screenTitle = styled.h1`
   font-size: 28px;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
 `;
 
-export function Heading_1({ children }: Props) {
-  return <H1>{children}</H1>;
-}
+const sectionTitle = styled.h2`
+  font-size: 21px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+`;
+
+const blockTitle = styled.h3``;
+
+const subBlockTitle = styled.h4``;
+
+export const Heading = {
+  screenTitle,
+  sectionTitle,
+  blockTitle,
+  subBlockTitle,
+};

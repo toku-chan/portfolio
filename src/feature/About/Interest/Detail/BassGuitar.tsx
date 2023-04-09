@@ -1,11 +1,11 @@
-import { Heading_2 } from '~/designSystems/Heading';
+import { Heading } from '~/designSystems';
 import { DetailWrapper } from '../../styles';
 
 export function BassGuitar() {
   return (
     // MEMO: 持っているベースの写真とか載せても良いかも
     <DetailWrapper>
-      <Heading_2>ベース</Heading_2>
+      <Heading.sectionTitle>ベース</Heading.sectionTitle>
       <p>
         趣味程度で弾いてます。コピーするだけです。
         <br />

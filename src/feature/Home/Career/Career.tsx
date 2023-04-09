@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { career } from './config';
-import { Heading_1 } from '~/designSystems/Heading';
+import { Heading } from '~/designSystems';
 
 const Content = styled.section`
   margin: 0 auto;
@@ -10,7 +10,7 @@ const Content = styled.section`
 export function Career() {
   return (
     <Content>
-      <Heading_1>Career</Heading_1>
+      <Heading.screenTitle>Career</Heading.screenTitle>
       <ul>
         {career.map(item => (
           // TODO: idとかにしておきたいが、暫定でdetailにしておく

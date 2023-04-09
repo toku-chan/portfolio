@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Heading_2 } from '~/designSystems/Heading';
+import { Heading } from '~/designSystems';
 import { simulatedProductsList } from './config';
 
 const DetailWrapper = styled.section`
@@ -9,7 +9,7 @@ const DetailWrapper = styled.section`
 export function Exnoa() {
   return (
     <DetailWrapper>
-      <Heading_2>合同会社EXNOA</Heading_2>
+      <Heading.sectionTitle>合同会社EXNOA</Heading.sectionTitle>
       <ul>
         {simulatedProductsList.map(item => (
           <li key={item.title}>
