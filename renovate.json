@@ -2,7 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "Japan",
   "schedule": [
-    "after 9am on Saturday"
+    "after 1am on Saturday",
+    "before 7am on Saturday"
   ],
   "extends": [
     "config:base"
