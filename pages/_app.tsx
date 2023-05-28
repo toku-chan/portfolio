@@ -1,6 +1,6 @@
-import type { AppProps } from 'next/app'
-import { Global } from '@emotion/react'
-import { ResetStyles } from './ResetStyles'
+import type { AppProps } from 'next/app';
+import { Global } from '@emotion/react';
+import { ResetStyles } from './ResetStyles';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Global styles={ResetStyles} />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

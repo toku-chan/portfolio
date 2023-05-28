@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { HomeContent } from '~/feature/Home';
 
-const Home: NextPage = () => <HomeContent />
+const Home: NextPage = () => <HomeContent />;
 
-export default Home
+export default Home;
