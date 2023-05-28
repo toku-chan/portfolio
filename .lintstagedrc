@@ -1,4 +1,6 @@
 {
   "*.ts": ["prettier --write"],
-  "*.tsx": ["prettier --write"]
+  "*.tsx": ["prettier --write"],
+  "*.md": ["prettier --write"],
+  "*.json": ["prettier --write"]
 }
