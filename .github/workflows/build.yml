@@ -1,0 +1,22 @@
+# イベント → どのタイミングでworkflowsのymlを実行するか
+
+# ジョブ → 同じランナーで実行する一連のステップを定義する。
+# ステップ → スクリプトやアクションを定義。順番に実行する。同じランナーなのでデータを共有できる。（ビルドしたファイルをテストするとか）
+
+# アクション → 複雑で頻繁に繰り返されるタスクを実行する（？）。workflowsに繰り返し書かれたコードを共通化できるのかな？
+
+# ランナー → 実行されるサーバーについて定義する。1度に1つのジョブを実行できる
+
+name: frontend build
+
+on: [push]
+jobs:
+  frontend-build:
+    run-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '.node-version'
+      - run: npm ci
+      - run: npm run build
