@@ -9,7 +9,7 @@ const createJestConfig = nextJest({
 /** @type {import('jest').Config} */
 const config = {
   // jest.setup.jsを定義するときのみ有効化する
-  // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.mjs'],
   moduleNameMapper: {
     // tsconfig.jsonに定義したpathと同じpathを定義
     '~/*': './src/*',
