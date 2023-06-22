@@ -9,7 +9,7 @@ const Content = styled.section`
 
 export function Skills() {
   return (
-    <Content>
+    <Content data-testid='skills'>
       <Heading.screenTitle>スキル</Heading.screenTitle>
       <ul>
         {mySkillSets.map(item => (
