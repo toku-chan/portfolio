@@ -1,25 +1,18 @@
-'use client';
-
-import { Global } from '@emotion/react';
-import { css } from '@emotion/react';
-
-const ResetStyles = css`
-  html,
-  body {
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    ul li {
-      list-style: none;
-    }
-  }
-`;
+import { Metadata } from 'next';
+import RestStyledComponent from './RestStyledComponent';
 
 type LayoutProps = {
   children: React.ReactNode;
+};
+
+/**
+ * MetaDataについて
+ * * 全ページで共通したい場合は、layout.tsxに宣言すると良いかもしれない
+ * * 注意：use client宣言されたページではmetadataは利用できるない
+ */
+export const metadata: Metadata = {
+  title: 'TKTK - PortFolio',
+  description: 'welcome to My PortFolio',
 };
 
 export default function RootLayout({
@@ -29,8 +22,9 @@ export default function RootLayout({
 }: LayoutProps) {
   return (
     <html lang='ja'>
-      <Global styles={ResetStyles} />
-      <body>{children}</body>
+      <body>
+        <RestStyledComponent>{children}</RestStyledComponent>
+      </body>
     </html>
   );
 }

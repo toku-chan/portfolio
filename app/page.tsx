@@ -16,18 +16,7 @@
  * * サーバ側でのfetch処理とかが膨大になったり、contextを実装し、そこから値を取得したい場合Client Components依存にはならないか？
  */
 
-import { Metadata } from 'next';
 import Home from './home-page';
-
-/**
- * MetaDataについて
- * * 全ページで共通したい場合は、layout.tsxに宣言すると良いかもしれない
- * * * layout.tsxがClient Componentsに依存してしまう場合は、use clientとmetadataの併用ができない
- */
-export const metadata: Metadata = {
-  title: 'TKTK - PortFolio',
-  description: 'welcome to My PortFolio',
-};
 
 export default async function Page() {
   return <Home />;
