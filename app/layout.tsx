@@ -1,14 +1,25 @@
-import { Metadata } from 'next';
+'use client';
+
+import { Global } from '@emotion/react';
+import { css } from '@emotion/react';
+
+const ResetStyles = css`
+  html,
+  body {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul li {
+      list-style: none;
+    }
+  }
+`;
 
 type LayoutProps = {
   children: React.ReactNode;
-};
-
-// NOTE: 全ページ共通で利用するメタの場合はLayoutに指定しても良いかも
-// NOTE: ページごとに宣言したい場合は、page.tsx内に定義するとできるっぽい
-export const metadata: Metadata = {
-  title: 'TKTK - PortFolio',
-  description: 'welcome to My PortFolio',
 };
 
 export default function RootLayout({
@@ -18,6 +29,7 @@ export default function RootLayout({
 }: LayoutProps) {
   return (
     <html lang='ja'>
+      <Global styles={ResetStyles} />
       <body>{children}</body>
     </html>
   );
