@@ -11,10 +11,10 @@
 
 - [x] README の修正
 - [x] Skills のスキル一覧を config 管理する
-- [ ] Page Router から App Router に移行する
+- [x] Page Router から App Router に移行する
   - [x] default の移行
-  - [ ] about の移行
-  - [ ] contact の移行
+  - [x] products の移行
+  - [x] contact の移行
 
 ### コンテンツの充実を目的としたタスク
 
