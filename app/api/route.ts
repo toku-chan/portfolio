@@ -1,3 +1,4 @@
-export async function GET(request: Request, response: Response) {
-  if (response.status === 200) console.log(response.json());
+export async function GET(request: Request) {
+  // TODO: ひとまずrequestを返してエラー回避
+  return request;
 }
