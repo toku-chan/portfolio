@@ -15,8 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      # https://github.com/actions/setup-node
+      # cacheはデフォルトでオフなため有効にする
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
+          cache: 'npm'
       - run: npm install
       - run: npm run build
