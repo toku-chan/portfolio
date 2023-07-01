@@ -1,6 +1,3 @@
-// TODO: いつノジマを退職したか記載
-// TODO: いつY'sの内定をもらったか記載
-// TODO: Y'sでの研修期間を記載
 export const career = [
   {
     date: '2017/03',
