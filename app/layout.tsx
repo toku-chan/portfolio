@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import RestStyledComponent from './RestStyledComponent';
-import { Header } from '~/feature/common/Header';
-import { Footer } from '~/feature/common/Footer';
+import { Header } from './ui/Header';
+import { Footer } from './ui/Footer';
 
 type LayoutProps = {
   children: React.ReactNode;

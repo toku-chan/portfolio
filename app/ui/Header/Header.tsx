@@ -3,6 +3,8 @@
  * * 共通Titleを持つ
  * * 共通Navigationを持つ
  */
+'use client';
+
 import React from 'react';
 import { Navigation } from './Navigation';
 
