@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import RestStyledComponent from './RestStyledComponent';
-import { Navigation } from './ui/Navigation';
+import { Header } from '~/feature/common/Header';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang='ja'>
       <body>
         <RestStyledComponent>
-          <Navigation />
+          <Header />
           {children}
         </RestStyledComponent>
       </body>
