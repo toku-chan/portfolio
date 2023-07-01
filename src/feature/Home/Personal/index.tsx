@@ -1,15 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from '@emotion/styled';
-import { spacingSize } from '~/designSystems';
 
-const Container = styled.div`
-  margin-top: ${spacingSize.level6_0x}px;
-`;
+const Container = styled.div``;
 
-const Content = styled.div`
-  margin-top: ${spacingSize.level1_0x}px;
-`;
+const Content = styled.div``;
 
 const List = styled.ul`
   display: flex;
@@ -17,9 +12,7 @@ const List = styled.ul`
   align-items: center;
 `;
 
-const Item = styled.li`
-  margin-right: ${spacingSize.level1_0x}px;
-`;
+const Item = styled.li``;
 
 export function Personal() {
   return (
