@@ -32,7 +32,7 @@ export default function RestStyledComponent({ children }: Props) {
   return (
     <>
       <Global styles={ResetStyles} />
-      <div>{children}</div>
+      {children}
     </>
   );
 }
