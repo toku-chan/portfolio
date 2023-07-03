@@ -15,7 +15,8 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: baseline;
   width: 90%;
-  margin: 10px auto;
+  margin: 0 auto;
+  padding-top: 10px;
 `;
 
 export const Header: React.FC = () => {

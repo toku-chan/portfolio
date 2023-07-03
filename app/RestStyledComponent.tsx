@@ -11,6 +11,8 @@ import { css } from '@emotion/react';
 const ResetStyles = css`
   html,
   body {
+    min-height: 100vh;
+
     * {
       margin: 0;
       padding: 0;

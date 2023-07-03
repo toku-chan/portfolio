@@ -4,6 +4,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const StyledFooter = styled.footer`
+  position: sticky;
+  top: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
