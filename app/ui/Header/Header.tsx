@@ -6,12 +6,23 @@
 'use client';
 
 import React from 'react';
-import { Navigation } from './Navigation';
+import styled from '@emotion/styled';
+import { Title } from '~/feature/Title';
+import { Navigation } from '~/feature/Navigation';
+
+const StyledHeader = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+  margin: 10px auto;
+`;
 
 export const Header: React.FC = () => {
   return (
-    <>
+    <StyledHeader>
+      <Title />
       <Navigation />
-    </>
+    </StyledHeader>
   );
 };
