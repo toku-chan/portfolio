@@ -15,6 +15,7 @@ type LayoutProps = {
 export const metadata: Metadata = {
   title: 'TKTK - PortFolio',
   description: 'welcome to My PortFolio',
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body>
         <RestStyledComponent>
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
         </RestStyledComponent>
       </body>
