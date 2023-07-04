@@ -1,4 +1,3 @@
-import { Heading } from '~/designSystems';
 import * as S from '../styles';
 
 const personalData = {
@@ -33,24 +32,24 @@ export function About() {
 
   return (
     <S.Content>
-      <Heading.screenTitle>About</Heading.screenTitle>
+      <h2>About</h2>
       <S.DetailWrapper>
-        <Heading.sectionTitle>名前</Heading.sectionTitle>
+        <h2>名前</h2>
         <p>{personalData.name}</p>
       </S.DetailWrapper>
       <S.DetailWrapper>
-        <Heading.sectionTitle>生年月日</Heading.sectionTitle>
+        <h2>生年月日</h2>
         <p>
           {personalData.birthday.year}年{personalData.birthday.month}月
           {personalData.birthday.date}日 {age}歳
         </p>
       </S.DetailWrapper>
       <S.DetailWrapper>
-        <Heading.sectionTitle>現在住んでいるところ</Heading.sectionTitle>
+        <h2>現在住んでいるところ</h2>
         <p>{personalData.location}</p>
       </S.DetailWrapper>
       <S.DetailWrapper>
-        <Heading.sectionTitle>最寄駅</Heading.sectionTitle>
+        <h2>最寄駅</h2>
         <p>JR常磐線 柏駅</p>
       </S.DetailWrapper>
     </S.Content>

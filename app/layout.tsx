@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import RestStyledComponent from './RestStyledComponent';
+import { Header } from './ui/Header';
+import { Footer } from './ui/Footer';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -13,6 +15,7 @@ type LayoutProps = {
 export const metadata: Metadata = {
   title: 'TKTK - PortFolio',
   description: 'welcome to My PortFolio',
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({
@@ -23,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang='ja'>
       <body>
-        <RestStyledComponent>{children}</RestStyledComponent>
+        <RestStyledComponent>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </RestStyledComponent>
       </body>
     </html>
   );

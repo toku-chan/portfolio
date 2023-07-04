@@ -1,34 +1,12 @@
-import styled from '@emotion/styled';
-import { spacingSize } from '~/designSystems';
-import { Layout } from '~/components/Layout';
-import { ProfileIcon } from './ProfileIcon';
-import { Personal } from './Personal';
-import { Career } from './Career';
-import { Skills } from '../Skills';
-import { Products } from '../Products';
+import React from 'react';
 
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: ${spacingSize.level4_0x}px auto 0;
-`;
-
-export function HomeContent() {
+export const HomeContent: React.FC = () => {
   return (
-    <Layout>
-      <Container>
-        {/* 左ナビ */}
-        <div>
-          <ProfileIcon />
-          <Personal />
-        </div>
-        {/* メインコンテンツ */}
-        <div>
-          <Career />
-          <Skills />
-          <Products />
-        </div>
-      </Container>
-    </Layout>
+    <div>
+      <p>メモ</p>
+      <p>
+        feature内にHomeContentを持つ必要なく、appにあるhome-pageに機能を追加していく
+      </p>
+    </div>
   );
-}
+};
