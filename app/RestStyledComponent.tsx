@@ -5,14 +5,12 @@
  * * 公式のMigrateページを見てみると、Emotionは現段階ではサポートできるように実装中らしい
  * * styled componentsを実装すると、これはClient Components扱いになるため、use clientの宣言が必要になる
  */
-import { Global } from '@emotion/react';
-import { css } from '@emotion/react';
+import { Global, css } from '@emotion/react';
+import styled from '@emotion/styled';
 
 const ResetStyles = css`
   html,
   body {
-    min-height: 100vh;
-
     * {
       margin: 0;
       padding: 0;
@@ -26,6 +24,13 @@ const ResetStyles = css`
   }
 `;
 
+const LayoutWrapper = styled.div`
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 16px;
+`;
+
 type Props = {
   children: React.ReactNode;
 };
@@ -34,7 +39,7 @@ export default function RestStyledComponent({ children }: Props) {
   return (
     <>
       <Global styles={ResetStyles} />
-      {children}
+      <LayoutWrapper>{children}</LayoutWrapper>
     </>
   );
 }

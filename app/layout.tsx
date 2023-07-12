@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import RestStyledComponent from './RestStyledComponent';
 import { Header } from './ui/Header';
+import { MainContent } from './ui/MainContent';
 import { Footer } from './ui/Footer';
 
 type LayoutProps = {
@@ -28,7 +29,7 @@ export default function RootLayout({
       <body>
         <RestStyledComponent>
           <Header />
-          <main>{children}</main>
+          <MainContent>{children}</MainContent>
           <Footer />
         </RestStyledComponent>
       </body>
