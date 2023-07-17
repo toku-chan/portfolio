@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { breakPoint } from '~/config';
+import { breakPoint, SpaceSize } from '~/config';
 
 // NOTE: いつかロゴとかにしてみたい
-const Logo = styled.span`
-  font-size: 40px;
+const StyledLogo = styled.span`
+  font-size: ${SpaceSize.base_x1_5}px;
   font-weight: bold;
   color: blue;
 
@@ -14,10 +14,10 @@ const Logo = styled.span`
   }
 `;
 
-export const Title: React.FC = () => {
+export const Logo: React.FC = () => {
   return (
     <div>
-      <Logo>PORTFOLIO</Logo>
+      <StyledLogo>PORTFOLIO</StyledLogo>
     </div>
   );
 };
