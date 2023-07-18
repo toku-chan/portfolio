@@ -1,5 +1,6 @@
 import React from 'react';
 
+// TODO: 初期表示のとき、自動でfalseになるので検討をし直す必要がある
 export const useMediaQueryScreenWidth = () => {
   const [flg, setFlg] = React.useState(false);
 
