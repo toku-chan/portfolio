@@ -2,8 +2,12 @@
 // NOTE: 'use client'を記載することで、このファイルはclient components扱いになる
 'use client';
 
-import { HomeContent } from '~/feature/Home';
+import { H1 } from '~/feature/Heading';
 
 export default function Home() {
-  return <HomeContent />;
+  return (
+    <>
+      <H1>About</H1>
+    </>
+  );
 }
