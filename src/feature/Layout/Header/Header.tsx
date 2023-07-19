@@ -9,7 +9,6 @@ import React from 'react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { breakPoint } from '~/config';
-import { useMediaQueryScreenWidth } from '~/util/useMediaQuery';
 import { Logo } from './Logo';
 import { Navigation } from './Navigation';
 
@@ -38,11 +37,10 @@ const StyledHeader = styled.header`
 `;
 
 export const Header: React.FC = () => {
-  const isSp = useMediaQueryScreenWidth();
   return (
     <StyledHeader>
       <Logo />
-      {!isSp && <Navigation />}
+      <Navigation />
     </StyledHeader>
   );
 };
