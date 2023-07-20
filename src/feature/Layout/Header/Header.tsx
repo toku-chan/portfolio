@@ -9,6 +9,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { breakPoint } from '~/config';
+import { useDeviceContext } from '~/contexts/device';
 import { Logo } from './Logo';
 import { Navigation } from './Navigation';
 
@@ -37,10 +38,11 @@ const StyledHeader = styled.header`
 `;
 
 export const Header: React.FC = () => {
+  const { deviceType } = useDeviceContext();
   return (
     <StyledHeader>
       <Logo />
-      <Navigation />
+      {deviceType !== 'sp' && <Navigation />}
     </StyledHeader>
   );
 };
