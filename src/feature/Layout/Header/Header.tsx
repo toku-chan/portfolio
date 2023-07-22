@@ -8,7 +8,6 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { breakPoint } from '~/config';
 import { useDeviceContext } from '~/contexts/device';
 import { Logo } from './Logo';
 import { Navigation } from './Navigation';
@@ -25,22 +24,17 @@ const StyledPc = css`
   margin: 0 auto;
 `;
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.header<{ deviceType: string }>`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-
-  ${StyledSp}
-
-  ${breakPoint.mediaQueryPc} {
-    ${StyledPc}
-  }
+  ${({ deviceType }) => (deviceType === 'sp' ? StyledSp : StyledPc)};
 `;
 
 export const Header: React.FC = () => {
   const { deviceType } = useDeviceContext();
   return (
-    <StyledHeader>
+    <StyledHeader deviceType={deviceType}>
       <Logo />
       {deviceType !== 'sp' && <Navigation />}
     </StyledHeader>

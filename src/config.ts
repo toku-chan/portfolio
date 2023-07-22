@@ -1,15 +1,5 @@
 /**
  * NOTE
- * * feature共通のconfigを管理する
- */
-
-export const breakPoint = {
-  mediaQuerySp: '@media (max-width: 768px)',
-  mediaQueryPc: '@media (min-width: 769px)',
-};
-
-/**
- * NOTE
  * * 以下の利用を目的に共通の数値を管理している（8の倍数）
  * * font-size
  * * margin
