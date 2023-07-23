@@ -5,6 +5,7 @@ import { SpaceSize } from '~/config';
 // 見出し1
 const StyledH1 = styled.h1`
   font-size: ${SpaceSize.base_x2}px;
+  font-weight: 500; // TODO: weightについては検討していないので調査する
 `;
 export const H1: React.FC<PropsWithChildren> = ({ children }) => {
   return <StyledH1>{children}</StyledH1>;
