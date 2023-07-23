@@ -1,7 +1,7 @@
 'use client';
 
-import { ContactContent } from '~/feature/Contact';
+import { Contact } from '~/feature/Contact';
 
 export default function ContactPage() {
-  return <ContactContent />;
+  return <Contact />;
 }

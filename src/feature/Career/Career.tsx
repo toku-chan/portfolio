@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 import { career } from './config';
+import { SpaceSize } from '~/config';
 
-const Content = styled.section`
-  margin: 0 auto;
-  padding: 0;
+const Wrapper = styled.div`
+  padding-top: ${SpaceSize.base_x2}px;
 `;
 
 export function Career() {
   return (
-    <Content>
+    <Wrapper>
       <ul>
         {career.map(item => (
           // TODO: idとかにしておきたいが、暫定でdetailにしておく
@@ -17,6 +17,6 @@ export function Career() {
           </li>
         ))}
       </ul>
-    </Content>
+    </Wrapper>
   );
 }

@@ -1,23 +1,20 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { breakPoint, SpaceSize } from '~/config';
+import { SpaceSize } from '~/config';
+import { useDeviceContext } from '~/contexts/device';
 
 // NOTE: いつかロゴとかにしてみたい
-const StyledLogo = styled.span`
+const StyledLogo = styled.span<{ deviceType: string }>`
   font-size: ${SpaceSize.base_x1_5}px;
   font-weight: bold;
-  color: blue;
-
-  // HACK: テスト実装のため、後日修正すること
-  ${breakPoint.mediaQueryPc} {
-    color: red;
-  }
+  color: ${({ deviceType }) => (deviceType === 'sp' ? 'blue' : 'red')};
 `;
 
 export const Logo: React.FC = () => {
+  const { deviceType } = useDeviceContext();
   return (
     <div>
-      <StyledLogo>PORTFOLIO</StyledLogo>
+      <StyledLogo deviceType={deviceType}>PORTFOLIO</StyledLogo>
     </div>
   );
 };

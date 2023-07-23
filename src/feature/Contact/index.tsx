@@ -1,11 +1,17 @@
 import React from 'react';
+import styled from '@emotion/styled';
+import { SpaceSize } from '~/config';
 
-export const ContactContent: React.FC = () => {
+const Wrapper = styled.div`
+  padding-top: ${SpaceSize.base_x2}px;
+`;
+
+export const Contact: React.FC = () => {
   return (
-    <div>
+    <Wrapper>
       <p>メモ</p>
       <p>メールアドレス貼っておけば良いかな？</p>
       <p>TwitterのDMとかの方が良いかな？</p>
-    </div>
+    </Wrapper>
   );
 };
