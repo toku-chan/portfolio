@@ -7,6 +7,8 @@
  */
 import { Global, css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { SpaceSize } from '~/config';
+import { useDeviceContext } from '~/contexts/device';
 
 const ResetStyles = css`
   html,
@@ -16,6 +18,8 @@ const ResetStyles = css`
       padding: 0;
       box-sizing: border-box;
       font-family: sans-serif; // TODO: font-familyについても検討する
+      font-size: ${SpaceSize.base}px;
+      line-height: 1.5;
     }
 
     ul li {
@@ -24,11 +28,18 @@ const ResetStyles = css`
   }
 `;
 
-const LayoutWrapper = styled.div`
-  max-width: 1280px;
+const LayoutWrapper = styled.div<{ deviceType: string }>`
+  width: 100%;
   min-height: 100vh;
   margin: 0 auto;
   padding: 16px;
+
+  ${({ deviceType }) =>
+    deviceType === 'pc' &&
+    `
+    max-width: 1280px;
+    min-height: 100vh;
+  `}
 `;
 
 type Props = {
@@ -36,10 +47,11 @@ type Props = {
 };
 
 export default function RestStyledComponent({ children }: Props) {
+  const { deviceType } = useDeviceContext();
   return (
     <>
       <Global styles={ResetStyles} />
-      <LayoutWrapper>{children}</LayoutWrapper>
+      <LayoutWrapper deviceType={deviceType}>{children}</LayoutWrapper>
     </>
   );
 }
