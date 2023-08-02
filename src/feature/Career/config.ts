@@ -1,18 +1,14 @@
 export const career = [
   {
-    date: '2017/03',
-    detail: '日本大学商学部経営学科を卒業',
+    date: '2019/05~',
+    company: "株式会社Y's",
+    detail:
+      '派遣部門 フロントエンドエンジニアとして就職。基本的には常駐先で勤務。自社開発にも参加。',
   },
   {
-    date: '2017/04',
-    detail: '株式会社ノジマに入社',
-  },
-  {
-    date: '2019/05',
-    detail: "株式会社Y'sに入社",
-  },
-  {
-    date: '2019/05',
-    detail: '合同会社EXNOA（旧: DMM GAMES）に常駐で勤務',
+    date: '2019/05~',
+    company: '合同会社EXNOA',
+    detail:
+      '派遣として常駐で勤務。プラットフォームの改修・保守・運用。Next.js, TypeScript, GraphQLを用いたプラットフォーム開発。Laravel, HTML, scss, JavaScriptを用いたプラットフォーム開発。',
   },
 ];
