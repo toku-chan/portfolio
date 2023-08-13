@@ -1,4 +1,4 @@
-name: frontend test
+name: frontend test & lint
 
 on: [push]
 jobs:
@@ -10,4 +10,5 @@ jobs:
         with:
           node-version-file: '.node-version'
       - run: npm install
+      - run: npm run test
       - run: npm run lint
