@@ -1,23 +1,26 @@
-/**
- * 公式URL
- * * PageRouterからAppRouterへの移行は以下を参考にする
- * * https://nextjs.org/docs/pages/building-your-application/upgrading/app-router-migration#migrating-from-pages-to-app
- */
+import { Metadata } from 'next';
 
-/**
- * 方針としてのメモ
- * * page.tsxで行うことはサーバー側で実行したい内容を記載
- * * Client Componentsが依存しない内容
- * * client Componentsに依存してしまう実装を行う際は、page.tsx以外で記載することにする
- */
+export const metadata: Metadata = {
+  title: '中島一徳 - Home | PortFolio',
+  description: '中島一徳(なかじま いっとく)のポートフォリオサイトにようこそ',
+  viewport: 'width=device-width, initial-scale=1',
+};
 
-/**
- * 気になり
- * * サーバ側でのfetch処理とかが膨大になったり、contextを実装し、そこから値を取得したい場合Client Components依存にはならないか？
- */
-
-import Home from './home-page';
-
-export default async function Page() {
-  return <Home />;
+export default function Home() {
+  return (
+    <section>
+      <h1>Portfolio</h1>
+      <div>
+        <div>
+          <p>顔写真を載せたい</p>
+        </div>
+        <div>
+          <p>自己紹介</p>
+          <p>名前</p>
+          <p>誕生日</p>
+          <p>性別</p>
+        </div>
+      </div>
+    </section>
+  );
 }

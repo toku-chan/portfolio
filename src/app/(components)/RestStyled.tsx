@@ -46,7 +46,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function RestStyledComponent({ children }: Props) {
+export function RestStyled({ children }: Props) {
   const { deviceType } = useDeviceContext();
   return (
     <>
