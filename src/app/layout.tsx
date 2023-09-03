@@ -1,5 +1,5 @@
 import { headers } from 'next/headers';
-import { Navigation } from './(components)/Navi';
+import { Navigation } from './(components)/Navigation';
 import { RestStyled } from './(components)/RestStyled';
 import { Provider } from './(components)/Provider';
 
