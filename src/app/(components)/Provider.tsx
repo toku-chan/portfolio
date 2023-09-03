@@ -8,7 +8,7 @@ type Props = {
   deviceType: string;
 };
 
-export const ProviderComponents: React.FC<Props> = props => {
+export const Provider: React.FC<Props> = props => {
   return (
     <DeviceContext.Provider value={{ deviceType: props.deviceType }}>
       {props.children}
