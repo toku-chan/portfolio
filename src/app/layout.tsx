@@ -1,7 +1,7 @@
 import { headers } from 'next/headers';
-import { Navigation } from './(components)/(Navigation)/Navigation';
-import { RestStyled } from './(components)/RestStyled';
-import { Provider } from './(components)/Provider';
+import { Navigation } from './(RootComponents)/(Navigation)/Navigation';
+import { RestStyled } from './(RootComponents)/RestStyled';
+import { Provider } from './(RootComponents)/Provider';
 
 // HACK: UAがいつ利用できなくなるかはわからないが、それまでは利用し続ける
 // NOTE: next/headerはclientでは実行できない

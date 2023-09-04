@@ -36,7 +36,6 @@ const LayoutWrapper = styled.div<{ deviceType: string }>`
   ${({ deviceType }) =>
     deviceType === 'pc' &&
     `
-    max-width: 1280px;
     min-height: 100vh;
   `}
 `;
