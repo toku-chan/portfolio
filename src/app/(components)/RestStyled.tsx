@@ -29,10 +29,9 @@ const ResetStyles = css`
 `;
 
 const LayoutWrapper = styled.div<{ deviceType: string }>`
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 16px;
+  margin: 0;
 
   ${({ deviceType }) =>
     deviceType === 'pc' &&
