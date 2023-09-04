@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ClientHome } from './(RootComponents)/home';
 
 export const metadata: Metadata = {
   title: '中島一徳 - Home | PortFolio',
@@ -7,20 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-    <section>
-      <h1>Portfolio</h1>
-      <div>
-        <div>
-          <p>顔写真を載せたい</p>
-        </div>
-        <div>
-          <p>自己紹介</p>
-          <p>名前</p>
-          <p>誕生日</p>
-          <p>性別</p>
-        </div>
-      </div>
-    </section>
-  );
+  return <ClientHome />;
 }
