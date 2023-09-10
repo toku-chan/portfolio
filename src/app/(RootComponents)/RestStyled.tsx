@@ -7,7 +7,7 @@
  */
 import { Global, css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { SpaceSize } from '~/config';
+import { SpaceSize } from '~/designSystem/config';
 import { useDeviceContext } from '~/contexts/device';
 
 const ResetStyles = css`
