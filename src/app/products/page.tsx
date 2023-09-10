@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Note } from './(note)';
 
 export const metadata: Metadata = {
   title: '中島一徳 - Products | PortFolio',
@@ -6,14 +7,11 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
 };
 
-export default function Products() {
+export default async function Products() {
   return (
     <section>
       <h1>Products</h1>
-      <section>
-        <h2>成果物</h2>
-        <p>載せれるものがないので、完成し次第掲載します</p>
-      </section>
+      <Note />
     </section>
   );
 }
