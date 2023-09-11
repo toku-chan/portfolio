@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import { H1 } from '~/designSystem';
+
 import { Note } from './(note)';
 
 export const metadata: Metadata = {
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
 export default async function Products() {
   return (
     <section>
-      <h1>Products</h1>
+      <H1>Products</H1>
       <Note />
     </section>
   );
