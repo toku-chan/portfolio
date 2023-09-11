@@ -2,6 +2,8 @@ import { headers } from 'next/headers';
 import { Navigation } from './(RootComponents)/(Navigation)';
 import { RestStyled } from './(RootComponents)/RestStyled';
 import { Provider } from './(RootComponents)/Provider';
+import { ThemeProvider } from '@mui/material';
+import { theme } from './(RootComponents)/Theme';
 
 // HACK: UAがいつ利用できなくなるかはわからないが、それまでは利用し続ける
 // NOTE: next/headerはclientでは実行できない
@@ -28,8 +30,10 @@ export default function RootLayout({
       <body>
         <Provider deviceType={deviceType}>
           <RestStyled>
-            <Navigation />
-            {children}
+            <ThemeProvider theme={theme}>
+              <Navigation />
+              {children}
+            </ThemeProvider>
           </RestStyled>
         </Provider>
       </body>
