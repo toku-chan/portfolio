@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Navigation } from './Navigation';
+import { Navigation } from '.';
 
 // NOTE: テストがないことでActionsがこけるので、clientのNavigationコンポーネントで仮のテストを実行
 describe('Navigation', () => {
