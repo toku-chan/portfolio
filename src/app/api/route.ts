@@ -1,4 +1,6 @@
-export async function GET(request: Request) {
-  // TODO: ひとまずrequestを返してエラー回避
-  return request;
+import { redirect } from 'next/navigation';
+
+// NOTE: 現状APIは利用していないため、next.jsにリダイレクトさせて、エラーを回避する
+export async function GET(): Promise<never> {
+  redirect('https://nextjs.org/');
 }
